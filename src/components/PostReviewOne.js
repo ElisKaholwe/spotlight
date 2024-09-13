@@ -9,8 +9,7 @@ const PostReviewOne = () => {
     <>
       <Link href='/blog'>
         <div key={review.id} className={`${styles.singleReview}`}>
-          {/* For an Image Fetched Locally (from the public directory-it is not necessary  to define the width and height property width={100} height={100}) */}
-          {/*<Image className={`border border-red-500`} width={60} height={60} src={review.Image} quality={100} alt='Review Image' />*/}
+          {/* This Empty Div Will be replaced by a Post/Review Image  */}
           <div className='bg-neutral-400 w-full h-[80%]'></div>
           <div>
             <h2 className={`${styles.BrandName}`}>{review.BrandName}</h2>

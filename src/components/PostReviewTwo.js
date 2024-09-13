@@ -12,13 +12,6 @@ const PostReviewTwo = () => {
           <div className={`flex flex-col items-start justify-between gap-[2px]`}>
             <h2 className={`${styles.reviewsBrandName}`}>{review.BrandName}</h2>
             <h1 className={`${styles.reviewsHeading}`}>{review.Heading}</h1>
-            <div className='flex gap-2'>
-              <h2 className={`${styles.reviewsUpdateTime}`}>{review.UpdateTime}</h2>
-              <h2 className='flex justify-between items-center text-NeutralStone font-[400]  font-primary text-[12px]'>
-                <IoPin />
-                {review.comments}
-              </h2>
-            </div>
           </div>
         </div>
       </Link>

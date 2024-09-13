@@ -1,5 +1,5 @@
 .sectionContainer {
-  @apply w-screen min-h-screen py-[2em];
+  @apply max-w-[100vw] mx-auto min-h-screen py-[2em] bg-lime-600;
   display: grid;
   grid-template-columns: 1fr;
 }

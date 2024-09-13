@@ -13,13 +13,13 @@
   gap: 0.5em;
   @apply my-2;
 }
-/*.singleReview::before {
+.singleReview::before {
   content: '';
   position: absolute;
   width: 0.375em;
   height: 100%;
   @apply my-auto -left-[10px] bg-PurpleSpecial;
-}*/
+}
 .categoryLabel {
   @apply bg-PinkSpecial text-[.85rem] text-PrimaryWhite italic font-extrabold py-[0.15em] px-[0.5em];
 }
