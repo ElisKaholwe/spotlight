@@ -18,8 +18,8 @@
   @apply text-[15px] font-secondary  font-semibold text-PrimaryBlack leading-5 line-clamp-4;
 }
 .reviewsBrandName {
-  @apply text-PurpleSpecial  font-primary text-[15px] font-[500];
+  @apply text-PurpleSpecial  font-primary text-[19px] font-[500];
 }
 .reviewsUpdateTime {
-  @apply text-NeutralStone font-[500] font-primary text-[11px];
+  @apply text-NeutralStone font-[500] font-primary text-[1rem];
 }
