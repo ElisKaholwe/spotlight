@@ -1,15 +1,13 @@
 import Link from 'next/link';
 import styles from './PostReviewTwo.module.css';
 import { ReviewDetails } from '../app/constants/index';
-import { IoPin } from 'react-icons/io5';
 const PostReviewTwo = () => {
   const ReviewDetail = ReviewDetails.map((review, index) => (
     <>
       <Link key={index} href='/academia'>
         <div className={`${styles.singleReview}`}>
           <div className='bg-neutral-400 w-full h-full'></div>
-          {/*<Image className={``} src={review.Image} quality={100} alt='Review Image' width={100} height={100} />*/}
-          <div className={`flex flex-col items-start justify-between gap-[2px]`}>
+          <div className={`flex flex-col items-start gap-[2px]`}>
             <h2 className={`${styles.reviewsBrandName}`}>{review.BrandName}</h2>
             <h1 className={`${styles.reviewsHeading}`}>{review.Heading}</h1>
           </div>

@@ -76,7 +76,7 @@ export const ReviewDetails = [
     id: 4,
     Image: One,
     BrandName: 'Samsung',
-    Heading: `Here Are The Funniest Tweets From Just This Weekend. `,
+    Heading: `I always find a way out of my bugs and I always fix them and I always get back  to form `,
     UpdateTime: '12 Feb 2025',
     comments: 118,
   },
