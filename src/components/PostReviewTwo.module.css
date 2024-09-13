@@ -2,23 +2,23 @@
   @apply w-screen mx-auto p-[1em];
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 15px;
-  row-gap: 30px;
-  align-items: stretch;
-  justify-items: center;
-  justify-content: center;
+  column-gap: 25px;
+  row-gap: 25px;
+  /*  align-items: stretch;*/
+  /* justify-items: center;*/
+  /* justify-content: center;*/
   align-content: center;
 }
 .singleReview {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  @apply w-full h-full  p-[.5em];
+  @apply w-full h-full;
 }
 .reviewsHeading {
   @apply text-[15px] font-secondary  font-semibold text-PrimaryBlack leading-5 line-clamp-4;
 }
 .reviewsBrandName {
-  @apply text-PurpleSpecial  font-primary text-[19px] font-[500];
+  @apply text-PurpleSpecial font-primary text-[19px] font-[500];
 }
 .reviewsUpdateTime {
   @apply text-NeutralStone font-[500] font-primary text-[1rem];
