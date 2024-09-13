@@ -18,11 +18,8 @@ const PostReviewTwo = () => {
   const reviewsCategoryHeader = 'JOBS & INTERVIEWS';
   return (
     <>
-      <article className={` flex flex-col w-screen items-center py-[1em]`}>
-        <h1
-          className={`text-transparent bg-clip-text bg-gradient-to-tr from-purple-800 to-pink-700 text-[1.25rem] font-[600] font-primary`}>
-          {reviewsCategoryHeader}
-        </h1>
+      <article className={`flex flex-col w-screen items-center py-[1em]`}>
+        <h1 className={`${styles.header}`}>{reviewsCategoryHeader}</h1>
         <div className={`${styles.reviewsContainer}`}>{ReviewDetail}</div>
       </article>
     </>
