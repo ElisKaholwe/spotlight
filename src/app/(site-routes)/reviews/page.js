@@ -7,8 +7,8 @@ const Reviews = () => {
     <>
       <article className={`${styles.articleSection}`}>
         <div>
-          <PostReviewThree />
           <PostReviewOne />
+          <PostReviewThree />
           <PostReviewTwo />
           <PostReviewOne />
           <PostReviewTwo />

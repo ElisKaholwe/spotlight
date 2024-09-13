@@ -1,14 +1,7 @@
 import {
-  IoArrowBack,
   IoAtCircleOutline,
-  IoBriefcase,
   IoBulb,
-  IoFootball,
-  IoHardwareChip,
-  IoHeadset,
   IoHelpCircleOutline,
-  IoLogoBitcoin,
-  IoManOutline,
   IoNewspaper,
   IoSchool,
   IoStorefrontSharp,
@@ -18,18 +11,7 @@ import {
 import One from '../../../public/Images/alex.jpg';
 import Two from '../../../public/Images/ReflectTwo.png';
 
-export const navigationCategories = [
-  { id: 1, icon: <IoLogoBitcoin />, heading: 'CRYPTOs & BLOCKCHAIN', subheading: 'Client asked why is the website in latin?' },
-  { id: 2, icon: <IoHeadset />, heading: 'GADGETSBAY', subheading: 'Client asked why is the website in latin?' },
-  { id: 3, icon: <IoFootball />, heading: 'SPORTECH', subheading: 'Client asked why is the website in latin?' },
-  { id: 4, icon: <IoBriefcase />, heading: 'TECHPRENEUR', subheading: 'Client asked why is the website in latin?' },
-  { id: 5, icon: <IoHardwareChip />, heading: 'AI & ML', subheading: 'Client asked why is the website in latin?' },
-  //{ id: 6, icon: <IoApps />, heading: 'HI-TECH', subheading: 'Client asked why is the website in latin?' },
-  { id: 7, icon: <IoManOutline />, heading: 'ONLY IN TZ', subheading: 'Client asked why is the website in latin?' },
-];
-
 export const navigationLinks = [
-  { id: 0, icon: <IoArrowBack />, href: '#', label: 'Continue reading' },
   { id: 1, icon: <IoAtCircleOutline />, href: '/reviews', label: 'OnSp⌬t Reviews' },
   { id: 2, icon: <IoNewspaper />, href: '/headlines', label: 'Breaking Headlines' },
   { id: 3, icon: <IoTrendingUpSharp />, href: '/trendings', label: 'Trendings' },

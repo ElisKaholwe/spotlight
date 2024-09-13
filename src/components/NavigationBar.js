@@ -10,7 +10,7 @@ import {
   IoMailSharp,
 } from 'react-icons/io5';
 import styles from './NavigationBar.module.css';
-import { navigationCategories, navigationLinks } from '../app/constants/index';
+import { navigationLinks } from '../app/constants/index';
 import { useContext } from 'react';
 import { NavigationBarContext } from '../contexts/ContextOne';
 
@@ -18,47 +18,26 @@ import { NavigationBarContext } from '../contexts/ContextOne';
 const NavigationBar = () => {
   const { isToggled, setisToggled } = useContext(NavigationBarContext);
   const closeNavBar = () => {
-    setTimeout(() => {
-      setisToggled(!isToggled);
-    }, 0);
+    setisToggled(!isToggled);
   };
   return (
     <>
       {/* Intentionally This Color Can Be Used as a Backgroud [#1c1c1c] */}
       <nav
-        className={`bg-PrimaryBlack z-50 px-4 py-4 absolute overflow-auto right-0 w-[80vw] h-[calc(100vh-7vh)] lg:w-[22.5vw] `}>
+        className={`bg-PrimaryBlack z-50 px-4 py-4 absolute overflow-auto right-0 w-[100vw] h-[calc(60vh-7vh)] lg:w-[22.5vw] `}>
         <div className={`w-full min-h-full flex flex-col justify-between`}>
           <ul className={`flex flex-col space-y-2`}>
             {/* Imported Navigation Links */}
             {navigationLinks.map((link) => (
               <Link onClick={closeNavBar} key={link.id} href={link.href}>
-                {link.id == 0 ? (
-                  <button
-                    className={`flex items-center text-[14px] space-x-4 text-PrimaryWhite border-BlueSpecial border-[2px] px-2 py-[1px]`}>
-                    <IoArrowBack /> Continue reading
-                  </button>
-                ) : (
-                  <li className={`${styles.listItem}  `}>
-                    <span className={`${styles.listIcons}`}>{link.icon}</span>
-                    {link.label}
-                  </li>
-                )}
+                <li className={`${styles.listItem}  `}>
+                  <span className={`${styles.listIcons}`}>{link.icon}</span>
+                  {link.label}
+                </li>
               </Link>
             ))}
           </ul>
           {/*End of Imported Navigation Links*/}
-
-          {/* Categories Section */}
-          <div className={`${styles.wrapper}`}>
-            {navigationCategories.map((element) => (
-              <Link href='/' onClick={closeNavBar} className={`${styles.item}`} key={element.id}>
-                <span className={`${styles.itemIcon}`}>{element.icon}</span>
-                <h1 className={`${styles.itemTitle}`}>{element.heading}</h1>
-                <p className={`${styles.itemParagraph}`}>{element.subheading}</p>
-              </Link>
-            ))}
-          </div>
-          {/* End of Categories Section */}
 
           {/* Footer Section */}
           <footer className={``}>
