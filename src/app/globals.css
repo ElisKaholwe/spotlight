@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* FONT AND FONT OPTIMIZATION */
+/* Custom font variable setup */
+:root {
+  --font-geist-sans: 'Geist Sans', sans-serif; /* Ensure this matches your localFont variable */
+}
+
+/* Tailwind customizations */
+.font-geist {
+  font-family: var(--font-geist-sans);
+}
